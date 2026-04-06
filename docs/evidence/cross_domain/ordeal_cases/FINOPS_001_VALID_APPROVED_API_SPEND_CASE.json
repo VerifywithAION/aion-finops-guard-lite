@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_001",
+    "label":  "VALID_APPROVED_API_SPEND",
+    "domain":  "finops",
+    "expected_outcome":  "ALLOW",
+    "notes":  "Budget-approved and within threshold"
+}

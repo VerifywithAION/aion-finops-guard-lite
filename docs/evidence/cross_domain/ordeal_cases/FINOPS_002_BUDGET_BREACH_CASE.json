@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_002",
+    "label":  "BUDGET_BREACH",
+    "domain":  "finops",
+    "expected_outcome":  "BLOCK",
+    "notes":  "Projected spend exceeds policy limit"
+}

@@ -44,6 +44,20 @@ Authority legitimacy failed even if the spend surface looks normal.
 
 ---
 
+## Core FinOps ordeal classes
+
+This domain is pressure-tested conceptually against:
+
+- valid approved spend
+- budget breach
+- forged approval authority
+- stale approval posture
+- hidden compounding cost path
+- policy-disallowed provider
+- unauthorized escalation of spend scope
+
+---
+
 ## Core takeaway
 
 FinOps is not merely observation after money moves.

@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_005_HIDDEN_COMPOUNDING_COST_PATH_RECEIPT",
+    "decision":  "WARN",
+    "reason":  "Projected cost path compounds beyond expected surface",
+    "consequence":  "Spend flagged for elevated review"
+}

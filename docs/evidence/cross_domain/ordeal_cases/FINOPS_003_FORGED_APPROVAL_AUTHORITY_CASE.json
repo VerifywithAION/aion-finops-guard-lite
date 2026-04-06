@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_003",
+    "label":  "FORGED_APPROVAL_AUTHORITY",
+    "domain":  "finops",
+    "expected_outcome":  "BLOCK",
+    "notes":  "Approval chain appears present but authority is invalid"
+}

@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_007_UNAUTHORIZED_SPEND_SCOPE_ESCALATION_RECEIPT",
+    "decision":  "BLOCK",
+    "reason":  "Requested spend exceeds authorized scope",
+    "consequence":  "Spend denied before commitment"
+}

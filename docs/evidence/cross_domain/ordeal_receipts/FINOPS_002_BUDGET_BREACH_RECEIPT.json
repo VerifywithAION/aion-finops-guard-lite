@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_002_BUDGET_BREACH_RECEIPT",
+    "decision":  "BLOCK",
+    "reason":  "Projected spend exceeds budget policy",
+    "consequence":  "Spend denied before execution"
+}

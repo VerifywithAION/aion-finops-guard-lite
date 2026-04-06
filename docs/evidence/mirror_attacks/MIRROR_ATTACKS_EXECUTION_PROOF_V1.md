@@ -17,6 +17,8 @@ They are execution-governance failures.
 - invalid approval chain
 - hidden compounding cost path
 - stale authorization posture
+- unauthorized spend scope escalation
+- disallowed provider execution
 
 ---
 
@@ -27,3 +29,16 @@ The same legitimacy failures that appear in software, wallets, or agents also ap
 The surface changes.
 
 The invariant does not.
+
+---
+
+## FinOps-specific mirror insight
+
+A financial action can look ordinary on the surface and still be inadmissible because:
+
+- its approval chain is false
+- its spend consequence compounds beyond expectation
+- its authority is stale
+- its scope exceeds what was authorized
+
+This is why FinOps governance must happen before spend.

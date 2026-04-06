@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_005",
+    "label":  "HIDDEN_COMPOUNDING_COST_PATH",
+    "domain":  "finops",
+    "expected_outcome":  "WARN",
+    "notes":  "Initial spend seems small but projected cost path compounds"
+}

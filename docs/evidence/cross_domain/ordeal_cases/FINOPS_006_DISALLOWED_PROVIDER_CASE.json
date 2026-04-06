@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_006",
+    "label":  "DISALLOWED_PROVIDER",
+    "domain":  "finops",
+    "expected_outcome":  "BLOCK",
+    "notes":  "Provider or spend surface is not approved by policy"
+}

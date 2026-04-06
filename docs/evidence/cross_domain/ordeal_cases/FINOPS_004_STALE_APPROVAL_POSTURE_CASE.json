@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_004",
+    "label":  "STALE_APPROVAL_POSTURE",
+    "domain":  "finops",
+    "expected_outcome":  "BLOCK",
+    "notes":  "Approval exists but is stale under policy"
+}

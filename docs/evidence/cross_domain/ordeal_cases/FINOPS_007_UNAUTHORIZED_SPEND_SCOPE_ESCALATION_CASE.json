@@ -1,0 +1,7 @@
+{
+    "case_id":  "FINOPS_007",
+    "label":  "UNAUTHORIZED_SPEND_SCOPE_ESCALATION",
+    "domain":  "finops",
+    "expected_outcome":  "BLOCK",
+    "notes":  "Requested spend exceeds authorized scope or category"
+}

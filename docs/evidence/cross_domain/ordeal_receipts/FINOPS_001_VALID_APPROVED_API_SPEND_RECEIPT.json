@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_001_VALID_APPROVED_API_SPEND_RECEIPT",
+    "decision":  "ALLOW",
+    "reason":  "Within approved spend threshold",
+    "consequence":  "Spend may proceed"
+}

@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_003_FORGED_APPROVAL_AUTHORITY_RECEIPT",
+    "decision":  "BLOCK",
+    "reason":  "Approval authority invalid",
+    "consequence":  "Spend denied before commitment"
+}

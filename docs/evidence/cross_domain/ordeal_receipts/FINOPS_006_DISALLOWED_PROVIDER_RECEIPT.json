@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_006_DISALLOWED_PROVIDER_RECEIPT",
+    "decision":  "BLOCK",
+    "reason":  "Provider not approved by policy",
+    "consequence":  "Spend denied before execution"
+}

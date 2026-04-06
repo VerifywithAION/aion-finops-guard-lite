@@ -1,0 +1,6 @@
+{
+    "receipt_id":  "FINOPS_004_STALE_APPROVAL_POSTURE_RECEIPT",
+    "decision":  "BLOCK",
+    "reason":  "Approval stale under policy",
+    "consequence":  "Spend denied until refreshed"
+}
