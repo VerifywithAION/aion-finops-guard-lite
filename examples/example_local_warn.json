@@ -1,0 +1,10 @@
+{
+  "runtime": "ollama_local",
+  "model": "llama3.1:8b",
+  "job_type": "batch_inference",
+  "actor": "local_agent_2",
+  "estimated_job_cost": 3.5,
+  "estimated_gpu_gb": 7.0,
+  "estimated_ram_gb": 13.0,
+  "scope_level": 2
+}

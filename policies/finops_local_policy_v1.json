@@ -1,0 +1,25 @@
+{
+  "version": "local-v1",
+  "mode": "ollama_local",
+  "max_estimated_job_cost": 8.0,
+  "warn_estimated_job_cost": 3.0,
+  "max_projected_daily_cost": 20.0,
+  "warn_projected_daily_cost": 10.0,
+  "max_scope_level": 3,
+  "allowed_runtimes": ["ollama_local"],
+  "blocked_models": ["llama3.1:70b", "mixtral:8x22b"],
+  "warn_models": ["llama3.1:8b", "mistral:7b", "qwen2.5-coder:7b"],
+  "resource_thresholds": {
+    "max_estimated_gpu_gb": 12.0,
+    "warn_estimated_gpu_gb": 6.0,
+    "max_estimated_ram_gb": 24.0,
+    "warn_estimated_ram_gb": 12.0
+  },
+  "counterfactual": {
+    "enabled": true,
+    "repeat_attempts": 5,
+    "job_cost_upshift_multiplier": 2.0,
+    "resource_upshift_multiplier": 1.5,
+    "stricter_profile_job_cost": 2.5
+  }
+}

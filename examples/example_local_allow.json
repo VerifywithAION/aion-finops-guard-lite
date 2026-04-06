@@ -1,0 +1,10 @@
+{
+  "runtime": "ollama_local",
+  "model": "phi3:mini",
+  "job_type": "chat_inference",
+  "actor": "local_agent_1",
+  "estimated_job_cost": 0.8,
+  "estimated_gpu_gb": 1.5,
+  "estimated_ram_gb": 3.0,
+  "scope_level": 1
+}

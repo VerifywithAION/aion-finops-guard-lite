@@ -17,11 +17,11 @@ The domain includes actions such as:
 
 This repo follows the AION governed-execution primitive:
 
-**intent Ã¢â€ â€™ preview Ã¢â€ â€™ decision Ã¢â€ â€™ consequence Ã¢â€ â€™ receipt Ã¢â€ â€™ execution gate**
+**intent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ preview ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ decision ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ consequence ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ receipt ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ execution gate**
 
 In this domain, the primitive becomes:
 
-**financial intent Ã¢â€ â€™ spend preview Ã¢â€ â€™ decision Ã¢â€ â€™ receipt Ã¢â€ â€™ allow / warn / block**
+**financial intent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ spend preview ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ decision ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ receipt ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ allow / warn / block**
 
 ---
 
@@ -131,3 +131,23 @@ This runtime is intentionally minimal and public-safe.
 
 It exists to demonstrate the execution gate, not to expose private engine logic.
 <!-- AION_FINOPS_RUNTIME_END -->
+
+<!-- AION_FINOPS_LOCAL_MODE_START -->
+## Ollama / local mode
+
+This repo also includes a local execution-governance mode for Ollama and other local open-source model workflows.
+
+It evaluates local model jobs using:
+
+- estimated local job cost
+- GPU / RAM requirements
+- scope level
+- counterfactual nearby-future risk
+
+See:
+- `docs/architecture/OLLAMA_LOCAL_MODE_ARCHITECTURE_V1.md`
+- `docs/evidence/domain/OLLAMA_LOCAL_MODE_EXECUTION_PROOF_V1.md`
+
+Runner:
+- `scripts/run_finops_guard_lite_local_eval.ps1`
+<!-- AION_FINOPS_LOCAL_MODE_END -->
