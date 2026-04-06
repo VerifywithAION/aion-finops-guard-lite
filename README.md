@@ -17,11 +17,11 @@ The domain includes actions such as:
 
 This repo follows the AION governed-execution primitive:
 
-**intent → preview → decision → consequence → receipt → execution gate**
+**intent â†’ preview â†’ decision â†’ consequence â†’ receipt â†’ execution gate**
 
 In this domain, the primitive becomes:
 
-**financial intent → spend preview → decision → receipt → allow / warn / block**
+**financial intent â†’ spend preview â†’ decision â†’ receipt â†’ allow / warn / block**
 
 ---
 
@@ -84,3 +84,18 @@ Its central claim is:
 Spend should not be trusted merely because a system can execute it.
 
 Spend should be admitted only when legitimacy is provable.
+
+
+<!-- AION_COUNTERFACTUAL_PREVIEW_START -->
+## Counterfactual preview layer
+
+This repo also tracks an additive counterfactual preview layer.
+
+It is non-breaking and optional.
+
+It strengthens financial execution governance by testing nearby future spend paths around the current request.
+
+See:
+- `docs/architecture/COUNTERFACTUAL_PREVIEW_ARCHITECTURE_V1.md`
+- `docs/evidence/domain/COUNTERFACTUAL_PREVIEW_EXECUTION_NOTE_V1.md`
+<!-- AION_COUNTERFACTUAL_PREVIEW_END -->
