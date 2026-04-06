@@ -9,15 +9,37 @@ Set-StrictMode -Version Latest
 $RepoRoot = Split-Path -Parent $PSScriptRoot
 $PythonFile = Join-Path $RepoRoot "server\finops_guard_lite.py"
 
-if ([string]::IsNullOrWhiteSpace($Payload)) {
-    $Payload = Join-Path $RepoRoot "examples\example_allow.json"
-}
-if ([string]::IsNullOrWhiteSpace($Policy)) {
-    $Policy = Join-Path $RepoRoot "policies\finops_policy_v1.json"
+function Resolve-RepoPath {
+    param(
+        [string]$BaseRoot,
+        [string]$InputPath
+    )
+
+    if ([string]::IsNullOrWhiteSpace($InputPath)) {
+        return ""
+    }
+
+    # Absolute path stays absolute
+    if ([System.IO.Path]::IsPathRooted($InputPath)) {
+        return [System.IO.Path]::GetFullPath($InputPath)
+    }
+
+    # Relative path resolves from repo root
+    return [System.IO.Path]::GetFullPath((Join-Path $BaseRoot $InputPath))
 }
 
+if ([string]::IsNullOrWhiteSpace($Payload)) {
+    $Payload = "examples\example_allow.json"
+}
+if ([string]::IsNullOrWhiteSpace($Policy)) {
+    $Policy = "policies\finops_policy_v1.json"
+}
+
+$Payload = Resolve-RepoPath -BaseRoot $RepoRoot -InputPath $Payload
+$Policy  = Resolve-RepoPath -BaseRoot $RepoRoot -InputPath $Policy
+
 if (!(Test-Path -LiteralPath $PythonFile)) { throw "Missing: $PythonFile" }
-if (!(Test-Path -LiteralPath $Payload)) { throw "Missing payload: $Payload" }
-if (!(Test-Path -LiteralPath $Policy)) { throw "Missing policy: $Policy" }
+if (!(Test-Path -LiteralPath $Payload))    { throw "Missing payload: $Payload" }
+if (!(Test-Path -LiteralPath $Policy))     { throw "Missing policy: $Policy" }
 
 python $PythonFile $Payload $Policy
