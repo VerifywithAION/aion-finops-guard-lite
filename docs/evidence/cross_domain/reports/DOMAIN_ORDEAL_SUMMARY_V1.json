@@ -1,0 +1,11 @@
+{
+  "kind": "DOMAIN_ORDEAL_SUMMARY_V1",
+  "repo": "aion-finops-guard-lite",
+  "domain": "finops",
+  "status": "scaffolded_public_safe",
+  "notes": [
+    "Initial proof-first repo scaffold created",
+    "Detailed ordeal cases and sanitized receipts will be added next",
+    "This repo follows the AION canonical repo protocol"
+  ]
+}
