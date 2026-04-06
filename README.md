@@ -17,11 +17,11 @@ The domain includes actions such as:
 
 This repo follows the AION governed-execution primitive:
 
-**intent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ preview ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ decision ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ consequence ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ receipt ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ execution gate**
+**intent ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ preview ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ decision ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ consequence ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ receipt ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ execution gate**
 
 In this domain, the primitive becomes:
 
-**financial intent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ spend preview ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ decision ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ receipt ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ allow / warn / block**
+**financial intent ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ spend preview ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ decision ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ receipt ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ allow / warn / block**
 
 ---
 
@@ -151,3 +151,20 @@ See:
 Runner:
 - `scripts/run_finops_guard_lite_local_eval.ps1`
 <!-- AION_FINOPS_LOCAL_MODE_END -->
+
+<!-- AION_FINOPS_LOCAL_RUNTIME_PROOF_START -->
+## Ollama / local runtime proof
+
+This repo now includes a public-safe runtime evidence document for local open-source model governance.
+
+It records observed local runtime outcomes for:
+
+- ALLOW
+- WARN
+- BLOCK
+
+with receipts and counterfactual summary.
+
+See:
+- `docs/evidence/domain/OLLAMA_LOCAL_RUNTIME_EXECUTION_PROOF_V1.md`
+<!-- AION_FINOPS_LOCAL_RUNTIME_PROOF_END -->
