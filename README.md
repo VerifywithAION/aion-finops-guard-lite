@@ -8,11 +8,11 @@ Its role is to evaluate spend-bearing or cost-bearing actions **before** irrever
 
 It follows the AION primitive:
 
-**intent → preview → decision → consequence → receipt → execution gate**
+**intent â†’ preview â†’ decision â†’ consequence â†’ receipt â†’ execution gate**
 
 In this domain, that becomes:
 
-**financial intent → spend preview → decision → receipt → allow / warn / block**
+**financial intent â†’ spend preview â†’ decision â†’ receipt â†’ allow / warn / block**
 
 ---
 
@@ -152,3 +152,23 @@ It is also a practical integration wedge.
 Financial consequence should not be trusted merely because a system can execute it.
 
 It should be admitted only when legitimacy is provable.
+
+
+<!-- AION_FINOPS_PRO_SKELETON_START -->
+## FinOps Guard Pro skeleton
+
+This repo now includes a Pro skeleton doc set that defines the deeper roadmap beyond Lite.
+
+See:
+- `docs/pro/FINOPS_GUARD_PRO_OVERVIEW_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_ROADMAP_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_CONNECTOR_LAYER_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_POLICY_ENGINE_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_APPROVAL_AUTHORITY_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_COUNTERFACTUAL_ENGINE_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_OPTIMIZATION_LAYER_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_ANOMALY_DRIFT_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_API_PLATFORM_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_EVIDENCE_FABRIC_V1.md`
+- `docs/pro/FINOPS_GUARD_PRO_ENTERPRISE_CONTROL_PLANE_V1.md`
+<!-- AION_FINOPS_PRO_SKELETON_END -->
