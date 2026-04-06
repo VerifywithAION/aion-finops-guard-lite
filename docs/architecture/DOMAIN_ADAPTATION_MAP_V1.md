@@ -14,24 +14,15 @@ This document maps the AION primitive into the FinOps domain.
 
 ## FinOps adaptation
 
-**financial intent → spend preview → decision → cost consequence → receipt → allow / warn / block**
+**financial intent → spend preview → decision → financial consequence → receipt → allow / warn / block**
 
 ---
 
-## Financial intent examples
+## Concrete surfaces
 
-- agent-triggered API call
-- cloud cost escalation event
-- subscription authorization
-- budget-governed approval
-- treasury-like payment action
-
----
-
-## Consequence examples
-
-- immediate spend
-- compounding usage cost
-- budget threshold breach
-- unauthorized resource consumption
-- irreversible payment or commitment
+- local open-source model jobs
+- imported billing snapshots
+- vendor spend snapshots
+- SaaS usage snapshots
+- cloud cost snapshots
+- upstream Buzz-originating context or spend payloads

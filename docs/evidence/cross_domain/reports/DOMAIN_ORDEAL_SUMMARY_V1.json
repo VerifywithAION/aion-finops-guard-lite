@@ -1,16 +1,12 @@
 {
-    "kind":  "DOMAIN_ORDEAL_SUMMARY_V1",
-    "repo":  "aion-finops-guard-lite",
-    "domain":  "finops",
-    "total_cases":  7,
-    "outcomes":  {
-                     "allow":  1,
-                     "warn":  1,
-                     "block":  5
-                 },
-    "notes":  [
-                  "Initial FinOps ordeal pack added",
-                  "Cases are public-safe and sanitized",
-                  "Receipts demonstrate pre-execution financial governance decisions"
-              ]
+  "kind": "DOMAIN_ORDEAL_SUMMARY_V1",
+  "repo": "aion-finops-guard-lite",
+  "domain": "finops",
+  "status": "canonicalized_with_runtime_and_import_paths",
+  "notes": [
+    "Lite repo reset to canonical proof-first reading surface",
+    "Runtime evidence linked from README",
+    "Buzz-compatible import path added",
+    "Repo positioned as API-connectable Lite wedge"
+  ]
 }

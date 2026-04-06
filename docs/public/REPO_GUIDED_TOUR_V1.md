@@ -2,67 +2,37 @@
 
 ## Purpose
 
-This guided tour controls the interpretation of the repository.
+This guided tour controls interpretation.
 
-AION FinOps Guard Lite is not a random cost-control project.
+AION FinOps Guard Lite is not a random FinOps experiment.
 
-It is a structured proof surface for one core idea:
-
-**financial execution should be evaluated before money is committed**
+It is one domain-specific lens of the AION governed-execution thesis.
 
 ---
 
-## Recommended reading order
+## Read in this order
 
-### 1. README
-Start here for:
-- what the system is
-- what it proves
-- what it is not
-
-### 2. Public Release Note
-Read the public claim boundary:
-- what is exposed
-- what is intentionally withheld
-- how broad the current claim is
-
-### 3. Hardening Note
-Read why this repo is not naive:
-- adversarial spend
-- forged approval
-- invalid authority
-- stale decision posture
-- hidden cost escalation
-
-### 4. Architecture Maps
-Read:
-- `docs/architecture/SYSTEM_ARCHITECTURE_MAP_V1.md`
-- `docs/architecture/DOMAIN_ADAPTATION_MAP_V1.md`
-
-These show how AION’s primitive becomes a financial execution gate.
-
-### 5. Domain Proof
-Read:
-- `docs/evidence/domain/DOMAIN_EXECUTION_PROOF_V1.md`
-
-This is the main FinOps proof layer.
-
-### 6. Cross-Domain Proof
-Read:
-- `docs/evidence/cross_domain/CROSS_DOMAIN_EXECUTION_PROOF_V1.md`
-
-This shows how financial execution governance aligns with the wider AION thesis.
-
-### 7. Mirror Attacks
-Read:
-- `docs/evidence/mirror_attacks/MIRROR_ATTACKS_EXECUTION_PROOF_V1.md`
-
-This is the invariant layer.
-
-It shows how the same legitimacy failures recur across financial surfaces.
+1. README
+2. Public Release Note
+3. Hardening Note
+4. System Architecture Map
+5. Domain Adaptation Map
+6. Domain Execution Proof
+7. Runtime Execution Proof
+8. Ollama / Local Runtime Execution Proof
+9. Imported Billing Snapshot Execution Proof
+10. Buzz-Compatible Import Execution Proof
+11. Cross-Domain Execution Proof
+12. Mirror Attacks Execution Proof
 
 ---
 
-## Canonical takeaway
+## Key distinction
 
-AION FinOps Guard Lite demonstrates that financial actions can be admitted or refused based on legitimacy before spend occurs.
+This repo contains:
+- public-safe proof framing
+- real local runtime evidence
+- real imported snapshot evidence path
+- API-connectable Lite positioning
+
+The Pro version is where deeper monetized enterprise depth belongs.

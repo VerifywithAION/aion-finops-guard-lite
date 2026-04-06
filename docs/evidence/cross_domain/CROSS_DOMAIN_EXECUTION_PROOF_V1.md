@@ -4,21 +4,16 @@
 
 This document places FinOps Guard Lite inside the wider AION ecosystem.
 
-The same legitimacy principle appears across multiple domains:
+The same legitimacy problem repeats across domains:
 
 - wallet execution
-- agent action
-- device control
+- agent execution
+- software release
+- IoT
 - robotics
 - scientific execution
-- financial spend
+- financial consequence
 
----
+The surface changes.
 
-## Shared invariant
-
-The same core question recurs:
-
-**should this consequential action be allowed before reality changes?**
-
-FinOps is one especially important surface because consequence appears as financial commitment.
+The primitive does not.

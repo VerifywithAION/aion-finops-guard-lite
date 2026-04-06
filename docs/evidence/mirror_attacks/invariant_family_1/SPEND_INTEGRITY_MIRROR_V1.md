@@ -1,6 +1,6 @@
 # Spend Integrity Mirror V1
 
-A financial action must not be admitted if the spend intent or supporting artifact is tampered.
+If spend intent or spend evidence is tampered, execution legitimacy collapses.
 
 Invariant:
-integrity failure → no admissible spend
+integrity failure -> no admissible financial consequence

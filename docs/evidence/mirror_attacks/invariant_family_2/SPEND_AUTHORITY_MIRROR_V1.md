@@ -1,6 +1,6 @@
 # Spend Authority Mirror V1
 
-A financial action must not be admitted if the approval or authority behind it is forged, stale, or invalid.
+If approval or authority behind spend is forged, stale, or invalid, execution legitimacy collapses.
 
 Invariant:
-authority failure → no admissible spend
+authority failure -> no admissible financial consequence

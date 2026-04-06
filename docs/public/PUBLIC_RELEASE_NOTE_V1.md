@@ -2,25 +2,23 @@
 
 ## Purpose
 
-This repository presents AION FinOps Guard Lite as a public-safe proof surface for governed financial execution.
+This repository presents AION FinOps Guard Lite as a public-safe proof surface and API-connectable Lite integration wedge for governed financial execution.
 
 It exposes:
-
 - architecture framing
-- domain adaptation of the governed-execution primitive
-- public-safe proof documents
-- ordeal cases
-- sanitized receipts
-- mirror attack invariants
+- proof documents
+- public-safe runtime evidence
+- imported evidence paths
+- Buzz-compatible integration path
+- mirror invariants
+- guided interpretation
 
 It intentionally withholds:
-
-- private engine source code
+- private core engine source
+- sensitive credentials
 - proprietary orchestration
-- sensitive billing configs
-- private heuristics
-- real exploit or abuse material
-- internal production details not required for the proof surface
+- classified heuristics
+- internal monetized Pro depth
 
 ---
 
@@ -29,29 +27,29 @@ It intentionally withholds:
 The current claim is:
 
 A financial execution domain can be structured as a governed-execution system that:
-
-- evaluates spend-bearing actions before execution
-- previews likely cost or policy consequence
-- decides whether a spend path should be allowed, warned, or blocked
-- emits receipts before irreversible financial consequence
-
----
-
-## Interpretation boundary
-
-This repo does not claim:
-
-- complete production deployment
-- release of internal engine logic
-- exposure of sensitive financial connectors
-- universal real-world integration across all providers
-
-It claims a bounded, proof-backed public-safe execution model for FinOps governance.
+- evaluates spend-bearing actions before consequence
+- emits `ALLOW / WARN / BLOCK`
+- records receipts
+- supports counterfactual preview
+- accepts local, imported, and Buzz-compatible upstream evidence
 
 ---
 
-## Public-safe reading rule
+## Lite boundary
 
-This repo should be interpreted as a proof surface.
+Lite is intended to be:
+- testable
+- connectable
+- publicly understandable
+- integration-ready
 
-It demonstrates how financial execution can be governed before spend without exposing sensitive implementation details.
+Lite is not the full monetized enterprise depth.
+
+---
+
+## Interpretation rule
+
+Read this repo as:
+- a real proof surface
+- a real Lite runtime wedge
+- a practical end-to-end test surface for external pipelines

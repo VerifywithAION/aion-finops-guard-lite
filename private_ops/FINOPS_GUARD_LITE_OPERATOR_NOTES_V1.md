@@ -1,12 +1,17 @@
 # FinOps Guard Lite Operator Notes V1
 
-This file is private-ops facing.
+Private-ops facing note.
 
-It exists only to track internal recovery and implementation notes.
+This repo is the Lite proof and integration wedge.
+
+Use it to:
+- test end-to-end pipeline behavior
+- test upstream Buzz import compatibility
+- test local runtime wedges
+- test imported billing evidence paths
 
 Do not expose:
-- internal logic
-- sensitive configs
-- provider credentials
-- private policy composition
-- production orchestration details
+- private engine internals
+- monetized Pro logic
+- sensitive credentials
+- internal orchestration details

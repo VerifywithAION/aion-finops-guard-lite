@@ -2,63 +2,41 @@
 
 ## Purpose
 
-This document explains why AION FinOps Guard Lite should not be read as a naive cost-monitoring demo.
+This document explains why AION FinOps Guard Lite is not a naive cost-monitoring project.
 
-Its concern is adversarial or misaligned spend execution.
+Its concern is adversarial, fragile, or illegitimate financial execution.
 
 ---
 
-## What is pressure-tested conceptually
+## Pressure-tested conceptual classes
 
-The FinOps domain is framed against dangerous or deceptive classes such as:
+The FinOps domain is framed against:
 
-- tampered spend intent
-- forged financial authority
-- invalid approval chains
+- spend integrity failure
+- forged spend authority
+- invalid approval chain
 - stale approval posture
-- unauthorized escalation of spend
 - hidden compounding cost paths
-
-These are not cosmetic failures.
-
-They are conditions under which financial execution legitimacy collapses.
+- disallowed provider execution
+- scope escalation
+- fragile nearby futures
 
 ---
 
 ## Why this matters
 
-Most financial operations tools observe or optimize after the money has already moved.
+Ordinary FinOps often observes cost after it already exists.
 
-AION FinOps Guard Lite is concerned with the prior question:
+AION evaluates whether the action should be admitted at all.
 
-**should this spend happen at all?**
-
----
-
-## Public-safe boundary
-
-This repo intentionally exposes:
-
-- reasoning structure
-- proof documents
-- sanitized receipts
-- decision framing
-- consequence mapping
-
-It intentionally withholds:
-
-- private source logic
-- sensitive configs
-- proprietary policy composition
-- internal production connectors
-- private operational playbooks
+That is a different category.
 
 ---
 
-## Final hardening position
+## Lite hardening position
 
-AION FinOps Guard Lite is not trying to prove that every financial workflow is already solved.
+Lite proves the execution-governance model in a public-safe way.
 
-It is proving something narrower and more important:
+It does not expose private monetized internals.
 
-that financial execution can be evaluated before consequence, and that legitimacy can be structured into an allow / warn / block gate.
+But it does expose enough structure and evidence to prove the category is real.

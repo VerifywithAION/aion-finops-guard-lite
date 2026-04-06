@@ -2,38 +2,32 @@
 
 ## What this system is
 
-AION FinOps Guard Lite is a public-safe proof surface for governed financial execution.
+AION FinOps Guard Lite is a public-safe proof surface and API-connectable runtime wedge for governed financial execution.
 
-Its role is to evaluate financial or cost-bearing actions **before** they are executed.
+Its role is to evaluate spend-bearing or cost-bearing actions **before** irreversible financial consequence occurs.
 
-The domain includes actions such as:
+It follows the AION primitive:
 
-- API spend
-- cloud / compute spend
-- SaaS or subscription actions
-- budget-governed approvals
-- agent-triggered paid operations
-- controlled treasury-like flows
+**intent → preview → decision → consequence → receipt → execution gate**
 
-This repo follows the AION governed-execution primitive:
+In this domain, that becomes:
 
-**intent ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ preview ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ decision ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ consequence ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ receipt ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ execution gate**
-
-In this domain, the primitive becomes:
-
-**financial intent ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ spend preview ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ decision ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ receipt ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ allow / warn / block**
+**financial intent → spend preview → decision → receipt → allow / warn / block**
 
 ---
 
 ## What this repo proves
 
-This repo proves that a financial execution domain can be structured as a governed-execution system by:
+This repo proves that a FinOps domain can be turned into a governed-execution system that:
 
-- evaluating cost-bearing intent before spend occurs
-- previewing likely cost and policy consequence
-- deciding whether spend should be allowed, warned, or blocked
-- recording the decision in receipts
-- demonstrating ordeal cases and mirrored invariants across the domain
+- evaluates spend-bearing actions before execution
+- emits deterministic `ALLOW / WARN / BLOCK` outcomes
+- records receipts
+- exposes counterfactual preview
+- works in local open-source mode
+- works through imported billing snapshot mode
+- supports a Buzz-compatible import path
+- can later be connected to external systems via API or ingestion paths
 
 ---
 
@@ -41,147 +35,120 @@ This repo proves that a financial execution domain can be structured as a govern
 
 This repo is not:
 
-- a release of private engine source code
+- a dump of private engine source
 - a full enterprise FinOps platform
-- a dump of internal policy logic
-- a release of sensitive account configs
-- a live billing integration dump
-- a production treasury orchestration stack
+- a release of sensitive billing credentials
+- a release of proprietary orchestration
+- a claim that every live billing connector is already wired
 
-It is a **public-safe proof artifact** for the FinOps branch of AION.
+It is the **Lite** public-safe proof and runtime surface.
 
----
-
-## Domain position
-
-This repo should be understood as:
-
-**governed financial execution before spend**
-
-It is not merely about dashboards or after-the-fact analysis.
-
-Its central claim is:
-
-**financial actions should be evaluated before money is committed**
+The **Pro** version is where deeper monetized capabilities live, including stronger enterprise integrations, richer policy composition, and advanced operational depth.
 
 ---
 
-## Reading order
+## Lite vs Pro
 
-1. `docs/public/REPO_GUIDED_TOUR_V1.md`
-2. `docs/public/PUBLIC_RELEASE_NOTE_V1.md`
-3. `docs/public/HARDENING_NOTE_V1.md`
-4. `docs/architecture/SYSTEM_ARCHITECTURE_MAP_V1.md`
-5. `docs/architecture/DOMAIN_ADAPTATION_MAP_V1.md`
-6. `docs/evidence/domain/DOMAIN_EXECUTION_PROOF_V1.md`
-7. `docs/evidence/cross_domain/CROSS_DOMAIN_EXECUTION_PROOF_V1.md`
-8. `docs/evidence/mirror_attacks/MIRROR_ATTACKS_EXECUTION_PROOF_V1.md`
+### Lite
+- public-safe
+- API-connectable wedge
+- local runtime modes
+- imported external evidence path
+- counterfactual preview
+- receipt emission
+- demo-safe integration surface
+
+### Pro
+- deeper enterprise integrations
+- richer live connector coverage
+- stronger anomaly layers
+- more advanced policy and approval composition
+- monetized operational depth
+
+---
+
+## Real evidence index
+
+### Main proof layers
+- [Domain Execution Proof](docs/evidence/domain/DOMAIN_EXECUTION_PROOF_V1.md)
+- [Runtime Execution Proof](docs/evidence/domain/RUNTIME_EXECUTION_PROOF_V1.md)
+- [Ollama / Local Runtime Execution Proof](docs/evidence/domain/OLLAMA_LOCAL_RUNTIME_EXECUTION_PROOF_V1.md)
+- [Imported Billing Snapshot Execution Proof](docs/evidence/domain/IMPORTED_BILLING_SNAPSHOT_EXECUTION_PROOF_V1.md)
+- [Buzz-Compatible Import Execution Proof](docs/evidence/domain/BUZZ_COMPATIBLE_IMPORT_EXECUTION_PROOF_V1.md)
+
+### Public boundary / reading control
+- [Public Release Note](docs/public/PUBLIC_RELEASE_NOTE_V1.md)
+- [Hardening Note](docs/public/HARDENING_NOTE_V1.md)
+- [Repo Guided Tour](docs/public/REPO_GUIDED_TOUR_V1.md)
+
+### Architecture
+- [System Architecture Map](docs/architecture/SYSTEM_ARCHITECTURE_MAP_V1.md)
+- [Domain Adaptation Map](docs/architecture/DOMAIN_ADAPTATION_MAP_V1.md)
+
+### Cross-domain and invariants
+- [Cross-Domain Execution Proof](docs/evidence/cross_domain/CROSS_DOMAIN_EXECUTION_PROOF_V1.md)
+- [Mirror Attacks Execution Proof](docs/evidence/mirror_attacks/MIRROR_ATTACKS_EXECUTION_PROOF_V1.md)
+
+---
+
+## API-connectable Lite position
+
+This repo should be read similarly to AION Guard Lite.
+
+The Lite surface is meant to be:
+- connectable by API
+- connectable by imported snapshots
+- connectable by upstream systems like Buzz
+- suitable for end-to-end pipeline tests
+
+That means this repo is not only a narrative proof surface.
+It is also a practical integration wedge.
+
+---
+
+## Current integration surfaces
+
+### 1. Minimal runtime wedge
+- local evaluator
+- receipt emission
+- counterfactual summary
+
+### 2. Ollama / local open-source mode
+- local model execution governance
+- GPU / RAM aware
+- counterfactual local resource preview
+
+### 3. Imported billing snapshot path
+- manual imported financial evidence
+- normalized billing snapshot evaluation
+- receipt output
+
+### 4. Buzz-compatible import path
+- upstream Buzz JSON
+- normalized into imported snapshot form
+- evaluated through the same FinOps decision engine
+
+---
+
+## Recommended reading order
+
+1. [Repo Guided Tour](docs/public/REPO_GUIDED_TOUR_V1.md)
+2. [Public Release Note](docs/public/PUBLIC_RELEASE_NOTE_V1.md)
+3. [Hardening Note](docs/public/HARDENING_NOTE_V1.md)
+4. [System Architecture Map](docs/architecture/SYSTEM_ARCHITECTURE_MAP_V1.md)
+5. [Domain Adaptation Map](docs/architecture/DOMAIN_ADAPTATION_MAP_V1.md)
+6. [Domain Execution Proof](docs/evidence/domain/DOMAIN_EXECUTION_PROOF_V1.md)
+7. [Runtime Execution Proof](docs/evidence/domain/RUNTIME_EXECUTION_PROOF_V1.md)
+8. [Ollama / Local Runtime Execution Proof](docs/evidence/domain/OLLAMA_LOCAL_RUNTIME_EXECUTION_PROOF_V1.md)
+9. [Imported Billing Snapshot Execution Proof](docs/evidence/domain/IMPORTED_BILLING_SNAPSHOT_EXECUTION_PROOF_V1.md)
+10. [Buzz-Compatible Import Execution Proof](docs/evidence/domain/BUZZ_COMPATIBLE_IMPORT_EXECUTION_PROOF_V1.md)
+11. [Cross-Domain Execution Proof](docs/evidence/cross_domain/CROSS_DOMAIN_EXECUTION_PROOF_V1.md)
+12. [Mirror Attacks Execution Proof](docs/evidence/mirror_attacks/MIRROR_ATTACKS_EXECUTION_PROOF_V1.md)
 
 ---
 
 ## Statement
 
-Spend should not be trusted merely because a system can execute it.
+Financial consequence should not be trusted merely because a system can execute it.
 
-Spend should be admitted only when legitimacy is provable.
-
-
-<!-- AION_COUNTERFACTUAL_PREVIEW_START -->
-## Counterfactual preview layer
-
-This repo also tracks an additive counterfactual preview layer.
-
-It is non-breaking and optional.
-
-It strengthens financial execution governance by testing nearby future spend paths around the current request.
-
-See:
-- `docs/architecture/COUNTERFACTUAL_PREVIEW_ARCHITECTURE_V1.md`
-- `docs/evidence/domain/COUNTERFACTUAL_PREVIEW_EXECUTION_NOTE_V1.md`
-<!-- AION_COUNTERFACTUAL_PREVIEW_END -->
-
-<!-- AION_FINOPS_RUNTIME_START -->
-## Minimal local runtime
-
-This repo also includes a minimal local runtime wedge.
-
-It evaluates financial actions locally and emits:
-
-- decision
-- reasons
-- receipt_id
-- receipt file
-- optional counterfactual summary
-
-Example runner:
-
-`scripts/run_finops_guard_lite_eval.ps1`
-
-Example payloads:
-
-- `examples/example_allow.json`
-- `examples/example_warn.json`
-- `examples/example_block.json`
-
-Policy:
-
-- `policies/finops_policy_v1.json`
-
-This runtime is intentionally minimal and public-safe.
-
-It exists to demonstrate the execution gate, not to expose private engine logic.
-<!-- AION_FINOPS_RUNTIME_END -->
-
-<!-- AION_FINOPS_LOCAL_MODE_START -->
-## Ollama / local mode
-
-This repo also includes a local execution-governance mode for Ollama and other local open-source model workflows.
-
-It evaluates local model jobs using:
-
-- estimated local job cost
-- GPU / RAM requirements
-- scope level
-- counterfactual nearby-future risk
-
-See:
-- `docs/architecture/OLLAMA_LOCAL_MODE_ARCHITECTURE_V1.md`
-- `docs/evidence/domain/OLLAMA_LOCAL_MODE_EXECUTION_PROOF_V1.md`
-
-Runner:
-- `scripts/run_finops_guard_lite_local_eval.ps1`
-<!-- AION_FINOPS_LOCAL_MODE_END -->
-
-<!-- AION_FINOPS_LOCAL_RUNTIME_PROOF_START -->
-## Ollama / local runtime proof
-
-This repo now includes a public-safe runtime evidence document for local open-source model governance.
-
-It records observed local runtime outcomes for:
-
-- ALLOW
-- WARN
-- BLOCK
-
-with receipts and counterfactual summary.
-
-See:
-- `docs/evidence/domain/OLLAMA_LOCAL_RUNTIME_EXECUTION_PROOF_V1.md`
-<!-- AION_FINOPS_LOCAL_RUNTIME_PROOF_END -->
-
-<!-- AION_FINOPS_IMPORTED_SNAPSHOT_START -->
-## Imported billing snapshot path
-
-This repo now includes a path for evaluating imported external billing or usage snapshots.
-
-It supports:
-- manual billing exports
-- usage snapshots
-- normalized external spend evidence
-
-See:
-- `docs/evidence/domain/IMPORTED_BILLING_SNAPSHOT_EXECUTION_PROOF_V1.md`
-
-Runner:
-- `scripts/run_finops_imported_snapshot_eval.ps1`
-<!-- AION_FINOPS_IMPORTED_SNAPSHOT_END -->
+It should be admitted only when legitimacy is provable.
