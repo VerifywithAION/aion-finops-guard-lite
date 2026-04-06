@@ -1,0 +1,7 @@
+{
+  "action": "batch_inference",
+  "provider": "anthropic",
+  "estimated_cost": 60.0,
+  "scope_level": 2,
+  "actor": "agent_2"
+}

@@ -17,11 +17,11 @@ The domain includes actions such as:
 
 This repo follows the AION governed-execution primitive:
 
-**intent â†’ preview â†’ decision â†’ consequence â†’ receipt â†’ execution gate**
+**intent Ã¢â€ â€™ preview Ã¢â€ â€™ decision Ã¢â€ â€™ consequence Ã¢â€ â€™ receipt Ã¢â€ â€™ execution gate**
 
 In this domain, the primitive becomes:
 
-**financial intent â†’ spend preview â†’ decision â†’ receipt â†’ allow / warn / block**
+**financial intent Ã¢â€ â€™ spend preview Ã¢â€ â€™ decision Ã¢â€ â€™ receipt Ã¢â€ â€™ allow / warn / block**
 
 ---
 
@@ -99,3 +99,35 @@ See:
 - `docs/architecture/COUNTERFACTUAL_PREVIEW_ARCHITECTURE_V1.md`
 - `docs/evidence/domain/COUNTERFACTUAL_PREVIEW_EXECUTION_NOTE_V1.md`
 <!-- AION_COUNTERFACTUAL_PREVIEW_END -->
+
+<!-- AION_FINOPS_RUNTIME_START -->
+## Minimal local runtime
+
+This repo also includes a minimal local runtime wedge.
+
+It evaluates financial actions locally and emits:
+
+- decision
+- reasons
+- receipt_id
+- receipt file
+- optional counterfactual summary
+
+Example runner:
+
+`scripts/run_finops_guard_lite_eval.ps1`
+
+Example payloads:
+
+- `examples/example_allow.json`
+- `examples/example_warn.json`
+- `examples/example_block.json`
+
+Policy:
+
+- `policies/finops_policy_v1.json`
+
+This runtime is intentionally minimal and public-safe.
+
+It exists to demonstrate the execution gate, not to expose private engine logic.
+<!-- AION_FINOPS_RUNTIME_END -->

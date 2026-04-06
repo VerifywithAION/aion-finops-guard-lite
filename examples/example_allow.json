@@ -1,0 +1,7 @@
+{
+  "action": "api_call",
+  "provider": "openai",
+  "estimated_cost": 12.5,
+  "scope_level": 1,
+  "actor": "agent_1"
+}

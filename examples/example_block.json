@@ -1,0 +1,7 @@
+{
+  "action": "gpu_cluster_scale",
+  "provider": "unknown_provider",
+  "estimated_cost": 250.0,
+  "scope_level": 5,
+  "actor": "agent_3"
+}
