@@ -8,3 +8,4 @@ runtime/
 tmp/
 *.log
 *.tmp
+*.bak_*
