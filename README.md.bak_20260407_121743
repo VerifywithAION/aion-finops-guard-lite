@@ -8,16 +8,11 @@ Its role is to evaluate spend-bearing or cost-bearing actions **before** irrever
 
 It follows the AION primitive:
 
-**intent -> preview -> decision -> consequence -> receipt -> execution gate**
+**intent â†’ preview â†’ decision â†’ consequence â†’ receipt â†’ execution gate**
 
 In this domain, that becomes:
 
-**financial intent -> spend preview -> decision -> receipt -> allow / warn / block**
-
-It can also evolve into a hybrid gate that combines:
-- FinOps cost control
-- AML-style suspicious-pattern review
-- counterfactual fragility preview
+**financial intent â†’ spend preview â†’ decision â†’ receipt â†’ allow / warn / block**
 
 ---
 
@@ -33,7 +28,6 @@ This repo proves that a FinOps domain can be turned into a governed-execution sy
 - works through imported billing snapshot mode
 - supports a Buzz-compatible import path
 - can later be connected to external systems via API or ingestion paths
-- can evolve into a non-breaking FinOps + AML hybrid gate
 
 ---
 
@@ -63,7 +57,6 @@ The **Pro** version is where deeper monetized capabilities live, including stron
 - counterfactual preview
 - receipt emission
 - demo-safe integration surface
-- non-breaking AML-style advisory layer
 
 ### Pro
 - deeper enterprise integrations
@@ -71,7 +64,6 @@ The **Pro** version is where deeper monetized capabilities live, including stron
 - stronger anomaly layers
 - more advanced policy and approval composition
 - monetized operational depth
-- economic + intelligence + AML hybrid governance
 
 ---
 
@@ -83,8 +75,6 @@ The **Pro** version is where deeper monetized capabilities live, including stron
 - [Ollama / Local Runtime Execution Proof](docs/evidence/domain/OLLAMA_LOCAL_RUNTIME_EXECUTION_PROOF_V1.md)
 - [Imported Billing Snapshot Execution Proof](docs/evidence/domain/IMPORTED_BILLING_SNAPSHOT_EXECUTION_PROOF_V1.md)
 - [Buzz-Compatible Import Execution Proof](docs/evidence/domain/BUZZ_COMPATIBLE_IMPORT_EXECUTION_PROOF_V1.md)
-- [Buzz Live Adapter Execution Proof](docs/evidence/domain/BUZZ_LIVE_ADAPTER_EXECUTION_PROOF_V1.md)
-- [Buzz Edge WARN Execution Proof](docs/evidence/domain/BUZZ_EDGE_WARN_EXECUTION_PROOF_V1.md)
 
 ### Public boundary / reading control
 - [Public Release Note](docs/public/PUBLIC_RELEASE_NOTE_V1.md)
@@ -132,14 +122,11 @@ It is also a practical integration wedge.
 - manual imported financial evidence
 - normalized billing snapshot evaluation
 - receipt output
-- AML-style advisory summary for suspicious-pattern review
 
 ### 4. Buzz-compatible import path
 - upstream Buzz JSON
 - normalized into imported snapshot form
 - evaluated through the same FinOps decision engine
-- preserves Buzz-only signals in context
-- supports advisory hybrid overlays
 
 ---
 
@@ -155,10 +142,8 @@ It is also a practical integration wedge.
 8. [Ollama / Local Runtime Execution Proof](docs/evidence/domain/OLLAMA_LOCAL_RUNTIME_EXECUTION_PROOF_V1.md)
 9. [Imported Billing Snapshot Execution Proof](docs/evidence/domain/IMPORTED_BILLING_SNAPSHOT_EXECUTION_PROOF_V1.md)
 10. [Buzz-Compatible Import Execution Proof](docs/evidence/domain/BUZZ_COMPATIBLE_IMPORT_EXECUTION_PROOF_V1.md)
-11. [Buzz Live Adapter Execution Proof](docs/evidence/domain/BUZZ_LIVE_ADAPTER_EXECUTION_PROOF_V1.md)
-12. [Buzz Edge WARN Execution Proof](docs/evidence/domain/BUZZ_EDGE_WARN_EXECUTION_PROOF_V1.md)
-13. [Cross-Domain Execution Proof](docs/evidence/cross_domain/CROSS_DOMAIN_EXECUTION_PROOF_V1.md)
-14. [Mirror Attacks Execution Proof](docs/evidence/mirror_attacks/MIRROR_ATTACKS_EXECUTION_PROOF_V1.md)
+11. [Cross-Domain Execution Proof](docs/evidence/cross_domain/CROSS_DOMAIN_EXECUTION_PROOF_V1.md)
+12. [Mirror Attacks Execution Proof](docs/evidence/mirror_attacks/MIRROR_ATTACKS_EXECUTION_PROOF_V1.md)
 
 ---
 

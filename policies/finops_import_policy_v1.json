@@ -1,15 +1,25 @@
 {
-  "version": "import-v1",
-  "mode": "imported_billing_snapshot",
-  "currency": "USD",
-  "warn_total_snapshot_cost": 100.0,
-  "max_total_snapshot_cost": 150.0,
-  "warn_single_item_cost": 50.0,
-  "max_single_item_cost": 100.0,
-  "blocked_services": ["forbidden_vendor"],
-  "counterfactual": {
-    "enabled": true,
-    "repeat_periods": 3,
-    "upshift_multiplier": 1.5
-  }
+    "version":  "import-v1",
+    "mode":  "imported_billing_snapshot",
+    "currency":  "USD",
+    "warn_total_snapshot_cost":  100.0,
+    "max_total_snapshot_cost":  150.0,
+    "warn_single_item_cost":  50.0,
+    "max_single_item_cost":  100.0,
+    "blocked_services":  [
+                             "forbidden_vendor"
+                         ],
+    "counterfactual":  {
+                           "enabled":  true,
+                           "repeat_periods":  3,
+                           "upshift_multiplier":  1.5
+                       },
+    "aml":  {
+                "enabled":  true,
+                "safe_score_threshold":  80,
+                "block_score_threshold":  60,
+                "mirofish_warn_threshold":  0.6,
+                "warn_liquidity_threshold":  100000,
+                "warn_volume_threshold":  300000
+            }
 }
